@@ -17,6 +17,9 @@
       background-size: cover;
 
       }
+      img{
+        border-radius: 50%;
+      }
       .div1,.div2,.div3,.div4{
         background-color: aqua;
         width: 60%;
@@ -34,6 +37,35 @@
         /* display: none; */
         visibility: hidden;
       }
+      .parents-2{
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        box-shadow: 0px 3px 25px 15px red;
+        background-color: antiquewhite;
+        animation-name: example;
+        animation-duration: 10s;
+        position: relative;
+       animation-name: example;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+        animation-delay: 0s;
+        animation-iteration-count: 3;
+        animation-direction: alternate-reverse;
+        animation-fill-mode:backwards;
+      }
+    
+
+@keyframes example {
+   0% {background-color: brown; left: 0px; top: 0px;}
+   15% {background-color: yellow; left: 350px; top: 0px;}
+   30% {background-color: aqua; left: 700px; top: 0px;}
+   45% {background-color: blue; left: 1050px; top: 0px;}
+   60% {background-color: blueviolet; left: 1400px; top: 0px;}
+   75% {background-color: black; left: 1050px; top: 0px;}
+   90% {background-color: teal; left: 700px; top: 0px;}
+   100% {background-color: khaki; left: 400px; top: 0px;}
+}
     </style>
     </head>
     <body>
@@ -52,6 +84,7 @@
       </div>
       
      </div>
+     <div class="parents-2"><img width="40px" height="40px" src="/photo.jpg" alt=""></div>
     </body>
 
  
